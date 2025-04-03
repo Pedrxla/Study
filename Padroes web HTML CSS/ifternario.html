@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Estruturas de condição</title>
+
+    <script>
+        const n1 = Number(prompt('Insira a nota 1: '))
+        const n2 = Number(prompt('Insira a nota 2: '))
+        const n3 = Number(prompt('Insira a nota 3: '))
+        const n4 = Number(prompt('Insira a nota 4: '))
+
+        const media = (n1 + n2 + n3 + n4) / 4
+        console.log('A media é:' + media)
+        
+/*        let mensagem = ''
+                if (media >= 7) {
+                    console.log('aprovado')
+                } else {
+                    console.log('reprovado')
+                }
+        console.log(mensagem)
+*/        
+        let mensagem = media >= 7 ? 'Aprovado' : 'Reprovado'
+        console.log(mensagem)
+
+        //media >= 7 ? console.log('Aprovado') : console.log('Reprovado') /* < -iftenario */
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+<html>

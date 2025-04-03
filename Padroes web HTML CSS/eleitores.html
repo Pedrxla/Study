@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleitores</title>
+</head>
+
+<body>
+    <script>
+        // entrada // processamento // saida
+        const anoVotacao = Number(prompt('Digite o ano da Eleição:'))
+        const anoNascimento = Number(prompt('Digite o ano de nascimento:'))
+
+        const idade = anoVotacao - anoNascimento
+
+
+       
+        if (idade < 16) {
+            console.log('Você não tem idade suficiente para votar! Idade: ' + idade + ' anos')
+
+        } else if (idade >= 16 && idade < 18) {
+            console.log('Você pode ou não votar, é facultativo! Idade: ' + idade + ' anos')
+        }
+
+
+        // }else if(idade == 16 || idade == 17 ){  ou, flexibiliza mais do que o e "&&" no exemplo percebemos que se cair 16 ou 17 irá rodar como true (verdadeiro) e o programa exibirá a mensagem do console.log, agora se for mairo do que 16 e 17 irá retornar falso e a mensagem do console.log não será exibida, afinal, votação para mairoes de 18 é obrigatória.
+
+        // }else if(idade >= 16 && idade < 18 ){ aqui a mesma situação PORÉM a diferença é que aqui a idade deverá ser maior ou igual a 16 e menor que 18, se sim, irá retornar como true(verdadeiro) se for maior que 17 irá retornar false, afinal, quem tem mais de 18 anos vota de forma obrigatória.
+
+        else if (idade >= 18 && idade < 65) {
+            console.log('Você é obrigado avotar! Idade: ' + idade + 'anos')
+        } else if (idade >= 65) {
+            console.log('Você pode ou não votar, é facultativo! Idade: ' + idade + ' anos')
+
+        }
+
+
+
+
+    </script>
+
+</body>
+</body>
+
+</html>

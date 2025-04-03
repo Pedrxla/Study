@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Estrutura de repetição</title>
+    <meta charset="UTF8"> 
+    <script>
+
+        let contador = 1
+        const qtd = prompt('Quantas notas você quer?')
+        let soma = 0// o uso do let no lugar de const ocorre devido a soma que ocorre a cada operação a cada loop, oq for usado ate o final utilizamos o const e o que ficar repetindo e mudando usamos let//
+        let nota = 0
+        while (contador <= qtd) {
+            
+            do{ // o "do" irá executar o código enquanto (while) a nota inserida for menor ou igual a 10, por isso foi inserido a função nota com prompt antes e o while com o restante do código depois, pois ao chegar no while se for detectado que a nota inserida é maior do que 10, o programa ficará solicitando a nota novamente até ser inserida o valor correto dentro da regra (inferior ou igual a 10)
+                nota = Number(prompt('Digite a nota ' + contador)) //number foi adicionado pois se não será somado de forma string, irá ficar notanotanotanota ao invés dos numeros somados em sí. E o + contado foi adicionado para inserir o numero da nota a ser digitada, por exemplo, nota 1 é qual? ai vc responde 10 e ai ele já vai pra prox, e nota 2? 3 4 e assim por diante até o maximo de notas que você informou que seriam inseridas.
+            }while( nota > 10 )
+    
+
+            
+            soma = soma + nota
+            contador++
+        }
+
+        console.log('Soma: ' + soma)
+        console.log('Nota: ' + nota)
+
+        const media = soma/qtd
+        console.log('Média: ' + media)
+        const resultado = media >=7 ? 'Aprovado' : 'Reprovado pois sua média foi inferior a 7!' //para entender o motivo do uso do if else dessa forma ,favor consultar o arquivo iftenario
+        console.log('Resultado: ' + resultado)
+
+
+        // a estrutura do for é muito parecida com a do while, porém é bem mais simples, sendo assim, ela é mais utilizada, nesse caso, o for é utilizado quando sabemos quantos numeros queremos para repetição, agora o while é para algo mais "imprevisível" while = enquanto, for = para, arquivo whilefor.html para descrição mais detalhada..
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

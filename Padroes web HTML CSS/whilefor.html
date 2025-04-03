@@ -1,0 +1,69 @@
+Exemplo com for e while no HTML
+1. Laço for
+O loop for é usado quando você sabe o número de iterações e deseja repetir um bloco de código um número fixo de vezes.
+
+html
+Copiar
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Laço for</title>
+</head>
+<body>
+    <h1>Laço for no JavaScript</h1>
+    <ul id="lista"></ul>
+    
+    <script>
+        const lista = document.getElementById("lista");
+
+        // Usando um laço for para adicionar itens a uma lista
+        for (let i = 1; i <= 5; i++) {
+            let item = document.createElement("li");
+            item.textContent = "Item " + i;
+            lista.appendChild(item);
+        }
+    </script>
+</body>
+</html>
+Neste exemplo, o for adiciona cinco itens a uma lista <ul>. O loop é executado 5 vezes, e a cada iteração, um novo item é criado e adicionado ao HTML.
+
+2. Laço while
+O loop while continua a execução enquanto a condição for verdadeira. Esse tipo de loop é mais adequado quando você não sabe exatamente o número de iterações, mas quer repetir até que uma condição seja satisfeita.
+
+html
+Copiar
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Laço while</title>
+</head>
+<body>
+    <h1>Laço while no JavaScript</h1>
+    <ul id="lista"></ul>
+
+    <script>
+        const lista = document.getElementById("lista");
+        let i = 1;
+
+        // Usando um laço while para adicionar itens a uma lista
+        while (i <= 5) {
+            let item = document.createElement("li");
+            item.textContent = "Item " + i;
+            lista.appendChild(item);
+            i++;  // Incrementa para evitar loop infinito
+        }
+    </script>
+</body>
+</html>
+Neste exemplo, o while adiciona itens à lista até que o contador i atinja o valor 5. O loop vai executando enquanto a condição i <= 5 for verdadeira.
+
+Diferença prática entre for e while:
+for: Útil quando o número de iterações é conhecido ou baseado em uma sequência (ex: for (let i = 0; i < 10; i++)).
+
+while: Ideal quando você não sabe o número exato de iterações e precisa repetir até que uma condição seja satisfeita.
+
+Se precisar de mais explicações ou exemplos, só avisar!

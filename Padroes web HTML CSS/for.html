@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Estrutura de repetição</title>
+    <meta charset="UTF8"> 
+    <script>
+            // inicialização
+            // condição (verifica se é verdadeiro ou falso) no while fica em lugares diferentes, agora no for é tudo dentro dos parenteses.
+            // incremento 
+            // segue exemplo:
+            const qtd = prompt('Quantas notas?')
+
+            let nota = 0
+            let soma = 0
+
+
+            for(let contador = 1; contador <= qtd; contador++){
+                nota = Number(prompt('Digite a nota ' + contador)) //Number para não entender como String
+                soma = soma + nota
+                console.log(contador)
+
+            }
+
+            const media = soma / qtd
+            console.log('A media final é: ' + media)
+
+            // a estrutura do for é muito parecida com a do while, porém é bem mais simples, sendo assim, ela é mais utilizada, nesse caso, o for é utilizado quando sabemos quantos numeros queremos para repetição, agora o while é para algo mais "imprevisível" while = enquanto, for = para, arquivo whilefor.html para descrição mais detalhada..
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+
+        const carros = [
+
+            'Celta',
+            'Fusca',
+            'Gol',
+            'Uno'
+        ]
+
+        carros.push('Fiesta') //    push adiciona elementos no final
+        carros.unshift('Astra')  //     unshift adiciona elementos no inicio!
+
+
+
+        carros.splice(1, 0, 'Marea') // splice serve para excluir itens a partir de uma posição (splice(posição ex:1 ,quantidade a ser excluida ex:1)) final: splice(1, 1), inserir itens a partir de uma posição que eu quero splice(1, 0, 'Uno') [aqui nos vamos na posição 1, não excluimos nenhum item (0) e adicionamos o item 'Uno'] e alterar itens do meu array apartir de uma posição splice (1, 1 'Uno') [vamos na posição 1, apagamos o item 1 e substituimos ele pelo 'Uno'].
+        console.table(carros)
+
+        carros.sort()//    sort serve para organizar em ordem alfabética.
+        console.table(carros)
+
+
+        /* carros.pop() // pop remove o item que está no final
+         console.table(carros)
+         
+         carros.shift() // shift remove item do inicio
+         console.table(carros)
+         */
+
+        /*  const carro = carros.shift() //assim podemos armazenar o item ao retirar do array e armazenar na variável carro e também podemos utiliza-lo novamente, com pop funciona da mesma maneira.
+          console.table(carro)
+          console.table(carros)
+       */
+        /*const anos = [1994, 1998, 2002, 2006]         //podemos botar vários tipos de indices no array, como por exemplo, strings, floats e etc MAS depende de cada linguagem de programação!
+        
+                console.log(anos[2]) //irá mostrar o ano 2 ou seja, 1998!
+                */
+
+        /* const carros = ['gol', 'celta', 'ka', 'fusca']
+         for(let elemento of carros){
+             console.log(elemento)           // algumas estruturas para navegar em um array.
+         }
+         
+         for(let i=0; i<4 i++){
+             console.log(carros[1])
+         }
+ */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
